@@ -2,16 +2,17 @@ public class Node {
     private Node esquerda;
     private Node direita;
     private String codigo;
-    private String info;
+    private String caractere;
 
-    public Node(String codigo, String info) {
+    public Node(String codigo, String caractere) {
         this.esquerda = null;
         this.direita = null;
         this.codigo = codigo;
-        this.info = info;
+        this.caractere = caractere;
     }
 
-    public Node() {}
+    public Node() {
+    }
 
     public Node getEsquerda() {
         return esquerda;
@@ -37,11 +38,11 @@ public class Node {
         this.codigo = codigo;
     }
 
-    public String getInfo() {
-        return info;
+    public String getCaractere() {
+        return caractere;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setCaractere(String caractere) {
+        this.caractere = caractere;
     }
 }
